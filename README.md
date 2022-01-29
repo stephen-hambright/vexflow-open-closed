@@ -1,0 +1,1 @@
+I'm a jazz musician but I am learning to code. I play the vibes and this is an exercise I give students to study voicings. I decided to put it into code and see if I could do it. Got some help with the library.

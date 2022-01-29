@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Closed Voicings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title is-2 has-text-centered">Open Closed Voicings</h1>
+   
+   
+        <div class = "center"> 
+ 
+                <p class= "has-text-centered" style="margin:20px">Choose 4 notes</p>
+                <div class = "error-message" style="margin:20px"><p id="error-message" ></p></div>
+            <!-- <input class="input is-primary" id="input" type="text" placeholder="" style="width:200px; margin: 20px;"> -->
+            <div class = "center">
+            <div class = "select"> 
+            <select id="note1" class = "ml-1">
+                <option selected="true" disabled="disabled"> Note 1</option>
+                <option value="F ">F</option>
+                <option value="F#">F#</option>
+                <option value="Gb">Gb</option>
+                <option value="G ">G</option>
+                <option value="G#">G#</option>
+                <option value="Ab">Ab</option>
+                <option value="A ">A</option>
+                <option value="A#">A#</option>
+                <option value="Bb">Bb</option>
+                <option value="B ">B</option>
+                <option value="C ">C</option>
+                <option value="C#">C#</option>
+                <option value="Db">Db</option>
+                <option value="D ">D</option>
+                <option value="D#">D#</option>
+                <option value="Eb">Eb</option>
+                <option value="E ">E</option>
+            </select>
+            </div>
+
+            <div class = "select"> 
+                <select id="note2" class = " ml-1">
+                    <option selected="true" disabled="disabled"> Note 2</option>
+                    <option value="F ">F</option>
+                    <option value="F#">F#</option>
+                    <option value="Gb">Gb</option>
+                    <option value="G ">G</option>
+                    <option value="G#">G#</option>
+                    <option value="Ab">Ab</option>
+                    <option value="A ">A</option>
+                    <option value="A#">A#</option>
+                    <option value="Bb">Bb</option>
+                    <option value="B ">B</option>
+                    <option value="C ">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Db">Db</option>
+                   <option value="D ">D</option>
+                    <option value="D#">D#</option>
+                    <option value="Eb">Eb</option>
+                    <option value="E ">E</option>
+            </select>
+            <!-- can i DELETE THE DIVS AND KEEP ALL THE SELECTS TOGETHER?  -->
+            </div>
+            <div class = "select"> 
+            <select id="note3" class="ml-1">
+                <option selected="true" disabled="disabled"> Note 3</option>
+                <option value="F ">F</option>
+                <option value="F#">F#</option>
+                <option value="Gb">Gb</option>
+                <option value="G ">G</option>
+                <option value="G#">G#</option>
+                <option value="Ab">Ab</option>
+                <option value="A ">A</option>
+                <option value="A#">A#</option>
+                <option value="Bb">Bb</option>
+                <option value="B ">B</option>
+                <option value="C ">C</option>
+                <option value="C#">C#</option>
+                <option value="Db">Db</option>
+                <option value="D ">D</option>
+                <option value="D#">D#</option>
+                <option value="Eb">Eb</option>
+                <option value="E ">E</option>
+            </select>
+            </div>
+            <div class = "select"> 
+            <select id="note4" class="select">
+                <option selected="true" disabled="disabled"> Note 4</option>
+                <option value="F ">F</option>
+                <option value="F#">F#</option>
+                <option value="Gb">Gb</option>
+                <option value="G ">G</option>
+                <option value="G#">G#</option>
+                <option value="Ab">Ab</option>
+                <option value="A ">A</option>
+                <option value="A#">A#</option>
+                <option value="Bb">Bb</option>
+                <option value="B ">B</option>
+                <option value="C ">C</option>
+                <option value="C#">C#</option>
+                <option value="Db">Db</option>
+                <option value="D ">D</option>
+                <option value="D#">D#</option>
+                <option value="Eb">Eb</option>
+                <option value="E ">E</option>
+            </select>
+            </div>
+        </div>
+        
+    <div class = "center">
+        <button class="button is-warning" id="inputButton" style="margin:20px">Create</button>
+    </div>
+            
+        </div>    
+                           
+                <div  class="center" width="725px" id="boo"></div>
+</div>
+</div>
+    <script src="https://unpkg.com/vexflow/releases/vexflow-debug.js"> </script>
+    <script src="main.js"></script> </script>
+</body>
+</html>
