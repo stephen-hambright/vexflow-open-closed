@@ -269,7 +269,7 @@ function openClose() {
   // start making the notes
   if (errFlag.flag) {
   
-    let chord = VN.sortChordNotes(chord);
+    chord = VN.sortChordNotes(chord);
 
     let meas = [];
     //----------
