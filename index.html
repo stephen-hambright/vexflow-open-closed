@@ -16,11 +16,11 @@
         <div class = "center"> 
  
                 <p class= "has-text-centered" style="margin:20px">Choose 4 notes</p>
-                <div class = "error-message" style="margin:20px"><p id="error-message" ></p></div>
+                <div style="margin:20px; color: maroon"><p id="open_closed_error-message" ></p></div>
             <!-- <input class="input is-primary" id="input" type="text" placeholder="" style="width:200px; margin: 20px;"> -->
             <div class = "center">
             <div class = "select"> 
-            <select id="note1" class = "ml-1">
+            <select id="open_closed_note1" class = "ml-1">
                 <option selected="true" disabled="disabled"> Note 1</option>
                 <option value="F ">F</option>
                 <option value="F#">F#</option>
@@ -43,7 +43,7 @@
             </div>
 
             <div class = "select"> 
-                <select id="note2" class = " ml-1">
+                <select id="open_closed_note2" class = " ml-1">
                     <option selected="true" disabled="disabled"> Note 2</option>
                     <option value="F ">F</option>
                     <option value="F#">F#</option>
@@ -66,7 +66,7 @@
             <!-- can i DELETE THE DIVS AND KEEP ALL THE SELECTS TOGETHER?  -->
             </div>
             <div class = "select"> 
-            <select id="note3" class="ml-1">
+            <select id="open_closed_note3" class="ml-1">
                 <option selected="true" disabled="disabled"> Note 3</option>
                 <option value="F ">F</option>
                 <option value="F#">F#</option>
@@ -88,7 +88,7 @@
             </select>
             </div>
             <div class = "select"> 
-            <select id="note4" class="select">
+            <select id="open_closed_note4" class="select">
                 <option selected="true" disabled="disabled"> Note 4</option>
                 <option value="F ">F</option>
                 <option value="F#">F#</option>
@@ -115,12 +115,12 @@
         <button class="button is-warning" id="inputButton" style="margin:20px">Create</button>
     </div>
             
-        </div>    
-                           
-                <div  class="center" width="725px" id="boo"></div>
+        </div>       
+    <div class="center" width="725px" id="VF_Window"></div>
 </div>
 </div>
-    <script src="https://unpkg.com/vexflow/releases/vexflow-debug.js"> </script>
+    <!-- using VexFlow 3.0.9 - newest version 4.0.1 broke when using 'addAccidental' -->
+    <script src="vexflow-min.js"> </script>
     <script src="main.js"></script> </script>
 </body>
 </html>
